@@ -6,7 +6,7 @@ const cors = require('cors');
 dotenv.config();
 
 const app = express();
-app.use(cors({ origin: 'http://localhost:5173' })); // CORS bien placé
+app.use(cors({ origin: ['http://localhost:5173', 'http://localhost:5174'] }));
 app.use(express.json()); // Permet d’analyser les données JSON envoyées par le frontend
 
 // Configurer le transporteur Nodemailer
