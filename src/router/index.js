@@ -1,14 +1,17 @@
 import { createRouter, createWebHistory } from 'vue-router';
+import NotFound from '../views/NotFound.vue';
 
 const routes = [
   {
-    path: '/',
+    path: '/:pathMatch(.*)*', 
+    name: 'not-found',
+    component: NotFound,
   },
 ];
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
-  routes, // Ici, routes est bien défini
+  routes, 
 });
 
 export default router;
