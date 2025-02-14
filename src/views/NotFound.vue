@@ -6,14 +6,15 @@
       <router-link to="/">Retour à l'accueil</router-link>
     </div>
 </template>
+
+<script setup>
+console.log("✅ NotFound.vue est bien monté !");
+</script>
   
 <style scoped>
-  .not-found {
-    text-align: center;
-    padding: 50px;
-  }
-  img {
-    max-width: 300px;
-  }
+.not-found {
+  text-align: center;
+  padding: 50px;
+  border: 2px solid red; /* Ajoute une bordure rouge */
+}
 </style>
-  

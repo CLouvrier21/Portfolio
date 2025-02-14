@@ -2,10 +2,21 @@
 <script setup>
 import Modal from './components/Modal.vue';
 import ContactForm from './components/ContactForm.vue';
+import { useRoute } from 'vue-router';
+import { watch } from 'vue';
+
+const route = useRoute();
+
+watch(route, (newRoute) => {
+  console.log("Nouvelle route :", newRoute.path);
+});
 </script>
 
 <template>
   <div class="page-container">
+    <router-view :key="$route.fullPath" />
+
+
     <!-- Section des modales -->
     <section id="modals-section">
       <div class="modals-container">
@@ -60,6 +71,7 @@ import ContactForm from './components/ContactForm.vue';
 <script>
 import Modal from './components/Modal.vue';
 import ContactForm from './components/ContactForm.vue';
+import { RouterView } from 'vue-router';
 
 export default {
   components: {
