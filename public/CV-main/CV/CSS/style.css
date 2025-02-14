@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital@0;1&family=Raleway:ital,wght@0,400;0,900;1,400&display=swap');
+
+body{
+    width: 1160px;
+    margin-left: auto;
+    margin-right: auto;
+}
+header{
+    font-family: 'Raleway', serif; 
+    background-color: #782221;
+}
+
+#pdp{
+    border-radius: 100%;
+    width: 120px;
+    margin-top: 40px;
+    box-shadow: 0 0 2em 3px black;
+}
+
+#pdp:hover{
+    cursor: zoom-in;
+}
+
+#nom-photo{
+    text-align: center;
+    color: white;
+    padding-bottom: 10px;
+}
+
+#contact {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #2c1d27;
+    padding: 20px;
+    font-family: 'Lato';
+    font-style: italic;
+}
+
+#address{
+    color: white;
+    text-decoration:none;
+}
+
+#address:hover{
+    text-decoration: underline white;
+}
+
+#mail{
+    color: white;
+    text-decoration:none;
+}
+#mail:hover{
+    text-decoration: underline white;
+}
+
+#phone{
+    color: white;
+    text-decoration:none;
+}
+#phone:hover{
+    text-decoration: underline white;
+}
+
+#a-propos-de-moi{
+    display: flex;
+    flex-direction: column;
+    background-color: #782221;
+    width: 350px;
+    
+    color: white;
+}
+
+#Présentation{
+    padding-left: 15px;
+    padding-right: 30px;
+    text-indent: 40px;
+}
+
+h2{
+    background-color: #dbc2a4;
+    padding-left: 10px;
+    font-family: 'Lato', Arial, serif;
+    width: 300px;
+    color: black;
+}
+
+main{
+    display: flex;
+    flex-direction: row;
+    border-right: solid thin;
+}
+
+#contenu{
+    margin-left: 30px;
+    width: 800px;
+    padding-bottom: 250px;
+    font-family: 'Raleway', serif;
+}
+
+#experience{
+    background-color: #dbc2a4;
+    width: 740px;
+    border-left: thick solid #782221;
+    font-family: 'Lato', serif;
+}
+#diplomes{
+    background-color: #dbc2a4;
+    width: 740px;
+    border-left: thick solid #782221;
+    font-family: 'Lato', serif;
+}
+#compétences{
+    background-color: #dbc2a4;
+    width: 740px;
+    border-left: thick solid #782221;
+    font-family: 'Lato', serif;
+}
+
+#SS{
+    font-weight: 500;
+    font-size: large;
+}
+#CEF{
+    font-weight: 500;
+    font-size: large;
+    font-style: italic;
+}
+
+#linkedin{
+    border-radius: 50;
+    width: 50px;
+}
+
+#linkedin:hover{
+    opacity: 0.50;
+}
+
+#X{
+    border-radius: 50;
+    width: 50px;
+}
+
+#X:hover{
+    opacity: 0.50;
+}
+
+#GitHub{
+    border-radius: 50;
+    width: 50px;
+}
+
+#GitHub:hover{
+    opacity: 0.50;
+}
+
+footer{
+    text-align: center;
+    background-color: #782221;
+    padding: 15px;
+    color: white;
+    font-family: 'Raleway', Arial, serif;
+}
