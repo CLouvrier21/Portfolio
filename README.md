@@ -2,6 +2,8 @@
 
 Installer les dépendances
     npm install
+    npm install vite
+    npm install vue-router@4 
 
 Configure le fichier .env dans le dossier backend/ et ajoute :
     PORT=3000
