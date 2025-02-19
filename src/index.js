@@ -5,7 +5,7 @@ document.querySelectorAll('nav a').forEach(anchor => {
         const targetElement = document.getElementById(targetId);
         
         if (targetElement) {
-            const offset = 107; // Ajuste cette valeur selon tes besoins
+            const offset = targetElement.id === "section3" ? 0 : 107;
             const elementPosition = targetElement.getBoundingClientRect().top + window.scrollY;
             window.scrollTo({
                 top: elementPosition - offset,

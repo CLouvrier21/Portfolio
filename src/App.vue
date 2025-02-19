@@ -90,54 +90,67 @@ export default {
 </script>
 
 <style scoped>
-.page-container{
+/* 🌍 Structure générale */
+.page-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 0 20px;
-  width: auto;
+  width: 100%;
   min-height: 100vh;
   justify-content: flex-start; 
 }
 
-#modals-section{
+/* 🗂 Section principale des modals */
+#modals-section {
   width: 100%;
   margin-bottom: 200px;
+  max-width: 1200px;
 }
 
-#modals-section h1{
+/* 🎯 Titres */
+#modals-section h1,
+.contact-section h1 {
   text-align: center;
   margin-bottom: 30px;
 }
 
-.modals-container{
+/* 📦 Conteneur des modals */
+.modals-container {
   display: flex;
   justify-content: center;
-  gap: 100px;
+  flex-wrap: wrap;
+  gap: 50px;
   padding: 20px 0;
   width: 100%;
 }
 
-.contact-section{
+/* 📩 Section Contact */
+.contact-section {
   background-color: #ffffff;
-  border-radius: 10px;
+  width: 50%;
+  max-width: 600px;
+  min-width: 280px;
+  border-radius: 20px;
+  margin-bottom: 75px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.contact-section h1{
+  padding: 20px;
   text-align: center;
-  margin-bottom: 20px;
 }
 
-img{
-  width: 300px;
+/* 📷 Images */
+img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
 }
 
-#img-modal{
-  width: 400px;
+#img-modal {
+  max-width: 400px;
 }
 
-.modal-wrapper{
+/* 🏗 Modals */
+.modal-wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -145,24 +158,60 @@ img{
   text-align: center;
   width: 80%;
   max-width: 300px;
-  overflow: hidden;
-  padding: 50px;
+  padding: 30px;
   background-color: rgb(138, 138, 138);
   border-radius: 50px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-button{
+/* 🎛 Boutons */
+button {
   padding: 10px 20px;
-  width: 100px;
+  width: auto;
+  min-width: 100px;
   background-color: rgb(0, 0, 0);
   color: white;
   border: none;
   border-radius: 5px;
   cursor: pointer;
   margin-top: 20px;
+  transition: background 0.3s ease;
 }
 
-button:hover{
+button:hover {
   background-color: rgb(70, 0, 0);
+}
+
+/* 📱 Adaptation pour écrans moyens (tablettes) */
+@media (max-width: 768px) {
+  .modals-container {
+    gap: 30px;
+  }
+
+  .contact-section {
+    width: 70%;
+  }
+
+  .modal-wrapper {
+    width: 90%;
+    max-width: 250px;
+  }
+}
+
+/* 📲 Adaptation pour petits écrans (mobiles) */
+@media (max-width: 480px) {
+  .contact-section {
+    width: 90%;
+  }
+
+  .modal-wrapper {
+    width: 100%;
+    max-width: 220px;
+    padding: 20px;
+  }
+
+  img {
+    max-width: 250px;
+  }
 }
 </style>

@@ -7,9 +7,8 @@ dotenv.config();
 
 const app = express();
 app.use(cors({ origin: ['http://localhost:5173', 'http://localhost:5174'] }));
-app.use(express.json()); // Permet d’analyser les données JSON envoyées par le frontend
+app.use(express.json());
 
-// Configurer le transporteur Nodemailer
 const transporter = nodemailer.createTransport({
   service: 'gmail',
   auth: {

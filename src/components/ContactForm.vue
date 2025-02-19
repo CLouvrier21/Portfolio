@@ -77,20 +77,27 @@ export default {
 <style scoped>
 form {
   max-width: 600px;
+  min-width: 200px;
+  width: 80%;
   margin: auto;
   padding: 20px;
   display: flex;
   flex-direction: column;
+  align-items: center;
   background: #f4f4f4;
   border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
 label {
   margin-top: 10px;
+  width: 100%;
+  text-align: center;
 }
 
 input, textarea {
+  display: flex;
+  text-align: center;
   width: 100%;
   padding: 10px;
   margin-top: 5px;

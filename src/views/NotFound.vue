@@ -15,6 +15,6 @@ console.log("✅ NotFound.vue est bien monté !");
 .not-found {
   text-align: center;
   padding: 50px;
-  border: 2px solid red; /* Ajoute une bordure rouge */
+  border: 2px solid red;
 }
 </style>

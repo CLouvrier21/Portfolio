@@ -1,14 +1,14 @@
 import { createRouter, createWebHistory } from 'vue-router';
-import NotFound from '../views/NotFound.vue'; // Assure-toi que le chemin est correct
+import NotFound from '../views/NotFound.vue';
 
 const routes = [
   {
     path: '/',
     name: 'home',
-    component: () => import('../views/Home.vue'), // Remplace par ton vrai composant Home
+    component: () => import('../views/Home.vue'),
   },
   {
-    path: '/:pathMatch(.*)*', // Capture toutes les routes non définies
+    path: '/:pathMatch(.*)*', 
     name: 'not-found',
     component: NotFound,
   },
