@@ -29,8 +29,8 @@ watch(route, (newRoute) => {
           <Modal :isVisible="showModal1" @update:isVisible="showModal1 = $event">
             <h2>Voici mon CV</h2>
             <p>Joint ci-dessous mon CV incluant mes compétences personnelles et professionnelles</p>
-            
             <a href="../public/CV-main/CV.html" target="_blank" rel="noopener noreferrer"><img id="img-modal" src="../Images/Aperçu CV.png" alt="Aperçu CV"></a>
+            <a href="https://github.com/CLouvrier21/CV">Lien vers le Repository GitHub</a>
           </Modal>
         </div>
 
@@ -41,7 +41,7 @@ watch(route, (newRoute) => {
           <button @click="showModal2 = true">Ouvrir</button>
           <Modal :isVisible="showModal2" @update:isVisible="showModal2 = $event">
             <h2>Voici mon Cahier des Charges</h2>
-            <p>Ceci est un exemple de modal dans Vue.js 2.</p>
+            <p>Voici un projet "Cahier des Charges"</p>
             <a href="../public/Cahier des Charges.pdf" target="_blank" rel="noopener noreferrer"><img src="../Images/Aperçu CDC.png" alt="Image 1"></a>
           </Modal>
         </div>
@@ -53,8 +53,9 @@ watch(route, (newRoute) => {
           <button @click="showModal3 = true">Ouvrir</button>
           <Modal :isVisible="showModal3" @update:isVisible="showModal3 = $event">
             <h2>Voici mon Espace Commentaire Dynamique</h2>
-            <p>Ceci est un exemple de modal dans Vue.js 3.</p>
+            <p>Voici un projet comprenant un Espace Commentaire Dynamique</p>
             <a href="../public/Devoir-Commentaire-main/Commentaire.html" target="_blank" rel="noopener noreferrer"><img id="img-modal" src="../Images/Aperçu Commentaire.png" alt="Aperçu Commentaire"></a>
+            <a href="https://github.com/CLouvrier21/Devoir-Commentaire">Lien vers le Repository GitHub</a>
           </Modal>
         </div>
 
@@ -128,7 +129,7 @@ export default {
   margin-bottom: 20px;
 }
 
-img {
+img{
   width: 300px;
 }
 

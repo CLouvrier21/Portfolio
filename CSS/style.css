@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
 
-body {
+body{
     display: flex;
     flex-direction: column;
     height: 100vh;
@@ -11,7 +11,7 @@ body {
 }
 
 /* Style de l'en-tête fixe */
-header {
+header{
     position: fixed;
     right: 0;
     width: 100vw;
@@ -27,7 +27,7 @@ header {
 }
 
 /* Fond transparent après scroll */
-header.scrolled {
+header.scrolled{
     background: rgba(184,184,184, 0.7);
 }
 
@@ -55,8 +55,8 @@ nav a:hover{
 }
 
 
-/* Style du contenu principal */
 
+/* Style du contenu principal */
 section{
     margin: 0;
     padding: 150px 0;
